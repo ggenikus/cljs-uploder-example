@@ -57,7 +57,7 @@
 
 ;; Еще одна приватная функция,
 ;; проверяет что строка не ```nil``` и не пустая
-(defn- not-blank [] (complement clojure.string/blank?))
+(defn- not-blank [x] ((complement clojure.string/blank?) x))
 
 
 ;; Функция которая отвечает за сохранение файла на сервере, 
