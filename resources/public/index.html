@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/page.css" />
+  </head>
+  <body>
+    <div> 
+      <form id="form" enctype="multipart/form-data" method="POST">
+        Username: <input name="username" type="text" > <br/><br/>
+        <input name="userfile" type="file" /> <br/><br/>
+        <input type="button" id="upload-button" value="Upload"  />
+      </form>
+      
+    </div>
+  </body>
+  <script src="js/cljs.js"></script>
+  <script > 
+    cljs_uploader.client.init();
+  </script>
+</html>
