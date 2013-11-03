@@ -2,7 +2,7 @@
   :description "Example app. 
                Explains how upload files using 
                ajax and Clojurescript"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/ggenikus/cljs-uploder-example"
   :dependencies [[org.clojure/clojure "1.5.1"] 
                  [domina "1.0.2"]
                  [compojure "1.1.5"]
