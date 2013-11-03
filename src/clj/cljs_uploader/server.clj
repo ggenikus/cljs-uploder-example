@@ -55,6 +55,10 @@
 ;; проверяем что ```x``` не ```nil```
 (defn- not-nil [x] ((complement nil?) x))
 
+;; Еще одна приватная функция,
+;; проверяет что строка не ```nil``` и не пустая
+(defn- not-blank [] (complement clojure.string/blank?))
+
 
 ;; Функция которая отвечает за сохранение файла на сервере, 
 ;; принимает имя пользователя 
@@ -92,8 +96,9 @@
   ;; fnmae - название файла 
   ;;         отправленного юзером
 
-  {:pre [((complement clojure.string/blank?) username) 
-         (not-nil tmpf) (not-nil fname)]}
+  {:pre [(not-blank username)
+         (not-nil tmpf) 
+         (not-blank fname)]}
 
   (println "Received " fname " from " username)
 
