@@ -93,7 +93,7 @@
   ;;         отправленного юзером
 
   {:pre [((complement clojure.string/blank?) username) 
-         (not-nil tmpf) (not-nil tmpf)]}
+         (not-nil tmpf) (not-nil fname)]}
 
   (println "Received " fname " from " username)
 
