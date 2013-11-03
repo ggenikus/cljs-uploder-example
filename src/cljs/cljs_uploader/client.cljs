@@ -7,13 +7,13 @@
 ;; Использую API
 ;; Google closure
 ;; отправляем форму на сервер.
-;; Для этого создаем объект IframeIo
+;; Для этого создаем объект ```IframeIo```
 ;; и вызываем у него метод sendFromForm,
 ;; передадим в параметрах объект формы и 
 ;; путь куда будет отправляться запрос.
 ;;
 ;; Для проверки успешности 
-;; вызываем setErrorChecker, 
+;; вызываем ```setErrorChecker```, 
 ;; передаем в параметрах 
 ;; функцию которая
 ;; должна вернуть false если
@@ -25,12 +25,12 @@
 ;; установим листенеры на три 
 ;; типа событий: 
 ;;
-;; SUCCESS - когда 
-;; errorChecker вернет false
+;; ``SUCCESS`` - когда 
+;; ```errorChecker``` вернет ```false```
 ;;
-;; ERROR - errorChecker вернет true
+;; ```ERROR``` - ```errorChecker``` вернет ```true```
 ;;
-;; COMPLETE - запрос уйдет на сервер,
+;; ```COMPLETE``` - запрос уйдет на сервер,
 ;; сработает в не зависимости от errorChecker
 ;; 
 ;; Детальнее - ["api goog.net.IframeIo"](http://docs.closure-library.googlecode.com/git/class_goog_net_IframeIo.html)
